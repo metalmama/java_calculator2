@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="java_calculator.CalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-29T12:11:55" hostname="violinux-Virtual-Machine" time="0.056">
+  <properties/>
+  <testcase name="test1plus1" classname="java_calculator.CalculatorTest" time="0.056"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
