@@ -1,17 +1,17 @@
 pipeline {
     agent any 
     stages {
-        stage('Build') { 
+        stage('Build') { //feature/* develop main
             steps {
-                echo "Build"
+                sh '.gradlew build'
             }
         }
-        stage('Test') { 
+        stage('Test') {  //develop  main
             steps {
-                echo "Test"
+               sh ./gradlew test'
             }
         }
-        stage('Deploy') { 
+        stage('Deploy') { //main
             steps {
                 echo "Deploy"
             }
