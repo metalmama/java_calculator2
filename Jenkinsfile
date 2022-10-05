@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     stages {
-        stage('Build') { //feature/* develop main
+       stage('Build') { //feature/* develop main
             steps {
                 sh '.gradlew build'
             }
@@ -18,4 +18,4 @@ pipeline {
         }
     }
 }
-}
+
