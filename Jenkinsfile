@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent any
     stages {
         stage('Build') { //feature/* develop main
             steps {
@@ -7,7 +7,13 @@ pipeline {
             }
         }
         stage('Test') {  //develop  main
-            steps {
+            when {
+                anyOf {
+                branch 'main';
+                branch 'development'
+         }
+        }
+        steps {
                sh './gradlew test'
             }
         }
@@ -17,5 +23,4 @@ pipeline {
             }
         }
     }
-}
 }
