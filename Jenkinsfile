@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {  //develop  main
             steps {
-               sh ./gradlew test'
+               sh './gradlew test'
             }
         }
         stage('Deploy') { //main
